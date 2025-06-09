@@ -1,0 +1,97 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/jquery.js"></script>
+    <title>jQuery</title>
+</head>
+
+<body>
+    <p>jQuery</p>
+    <p id="second">jQuery</p>
+    <p class="third">jQuery</p>
+    <p>jQuery</p>
+</body>
+<script>
+    // we use this document.ready code/block to run the jQuery code after the document is ready
+    $(document).ready(function () {
+        //your jquery code here
+
+        // console.log($);
+        // $ -> jQuery
+        // $ means jQuery
+        //Syntax of JQuery
+        // $(selector).action();
+        // console.log("We are Using jQuery");
+
+        // $(selector) -> Selects the element
+        // .action() -> Performs an action on the selected element
+
+        // $('p').click(); // Selects all <p> elements and attaches a click event handler
+
+        // $('p').click(function () {
+        //     console.log("You Clicked a Paragraph Tag ");
+
+        //     /*
+        //     $(this).hide();
+        //     here this means that particular tag that user will click on after clicking the paragraph, it will hide the paragraph we can also use #id and .class instead of this
+        //     */
+
+        // })
+
+        // There are three main types of selectors in jquery
+        //1. Element Selector
+        //2. ID Selector
+        //3.  Class Selector
+
+        //1. Element Selector - This is an example of element selectorn which clicks on all p
+        // $('p').click();
+
+        //2 ID Selector
+
+        //   $("#second").click(function () {
+        //     console.log("Clicked ", this);
+        //   });
+
+        //3 Class Selector
+        //   $(".third").click(function () {
+        //     console.log("Clicked ", this);
+        //   });
+
+
+        // dblclick
+        // $('p').dblclick(function () {
+        //     console.log("Double Click", this);
+        // })
+
+
+        //mouseenter()
+        //The function is executed when the mouse pointer enters the HTML element
+        //   $('#second').mouseenter(function () {
+        //     console.log("Mouse Enter", this);
+        // })
+
+
+        // mousedown()
+        //The function is executed, when the left, middle or right mouse button is pressed down, while the mouse is over the HTML element:
+
+        $('#second').mousedown(function () {
+            console.log("Mouse Down", this);
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+    });
+</script>
+
+</html>
