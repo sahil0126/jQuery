@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="js/jquery.js"></script>
+    <title>jQuery Effects</title>
+</head>
+
+<body>
+    <p class="first" style="width:80px;height:80px;background-color:red;">jQuery</p>
+
+
+
+    <p class="second" style="width:80px;height:80px;background-color:red;">jQuery</p>
+
+
+
+    <p class="third" style="width:80px;height:80px;background-color:red;">jQuery</p>
+
+
+
+
+
+    <p>jQuery</p>
+
+    <button class="btn">Click Me</button>
+
+    <h2 class="h2">Hello</h2>
+</body>
+<script>
+    $(document).ready(function () {
+
+
+        // Effects in jQuery
+        // hide 
+        // $('.second').dblclick(function () {
+        //     $(this).hide();
+        //     console.log("Element Hide");
+
+        // })
+
+
+        //Show
+
+        // first hiding h2
+        // $('.h2').hide();
+        // $('.second').click(function () {
+        //     $('.h2').show();
+        //     console.log("Element Showed");
+
+        // })
+
+
+
+        //toggle
+
+        // $('.h2').hide();
+        // $('.second').click(function () {
+        //     $('.h2').toggle();
+        //     console.log("Toggle ");
+
+        // })
+
+
+        //jQuery Fading Methods
+
+        //fadein
+        // $('.first').hide();
+        // $('.second').hide();
+        // $('.third').hide();
+
+        // $(".btn").click(function () {
+        //     $('.first').fadeIn();
+        //     $('.second').fadeIn("slow");
+        //     $('.third').fadeIn(3000);
+        // })
+
+
+        //fadeOut
+       
+
+        // $(".btn").click(function () {
+        //     $('.first').fadeOut();
+        //     $('.second').fadeOut("slow");
+        //     $('.third').fadeOut(3000);
+        // })
+        
+        //fadeToggle
+        
+        
+        $(".btn").click(function () {
+            $('.first').fadeToggle();
+            $('.second').fadeToggle("slow");
+            $('.third').fadeToggle(3000);
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    });
+</script>
+
+</html>

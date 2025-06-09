@@ -1,0 +1,79 @@
+<!-- import mydata from "../data/city.json" -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button>Click Me</button>
+    <div style=" height: 500px; width: 400px;  border: 2px solid black; display: flex;" class="div1">
+
+        <ul class="city-list">
+
+        </ul>
+
+    </div>
+</body>
+<script>
+    // $(document).ready(function(){
+    //     // $('.div1').load('../data/city.json')
+
+    // });
+
+    $(document).ready(function () {
+        // $.getJSON("data/city.json", function (data) {
+        //     $.each(data, function (index, city) {
+        //         $('.city-list').append(
+        //             `<li>${city.city},${city.state}-Population : ${city.population}</li>`
+        //         )
+        //     })
+        // })
+
+        $("button").click(function(){
+            $.get("../data/city.json",function(data,status){
+                
+                alert("Data:- "+ data[0].city + "\nStatus:- " + status)
+            })
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    })
+
+
+</script>
+
+</html>
